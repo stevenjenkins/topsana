@@ -1,0 +1,70 @@
+\documentclass{slides}
+\usepackage{url}
+\title{The Practice of System and Network Administration: Chapter 4}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\assignment}[1]{{\bf Idea: } #1 }
+
+\begin{document}
+
+%\maketitle
+
+\slide{PSNA Chapter 4: Debugging}
+
+\begin{quotation}
+Debugging is not simply making a change that fixes a problem.  That's
+the easy part.
+\end{quotation}
+
+So what is debugging?
+
+\slide{Goodbye to the problem}
+
+How can you make the problem disappear for good?
+
+\slide{The Basics}
+
+\bi
+\item Learn the customer's failed goal (problem).
+\item Find the problem's cause and fix it.
+\item Have the right tools.
+\ei
+
+\slide{The Problem}
+
+\bi
+\item Be polite.
+\item A reported outcome is about an expected outcome not happening.
+\item Understand the limits of customer's assistance.
+\ei
+
+\slide{The cause and fix}
+
+\bi
+\item Workarounds are bad
+\item Reboots (and restarts) are a sign of a lazy SA
+\item Process of elimination
+\item Successive refinement (\emph{follow-the-path})
+\item What changes were made recently
+\item Correct the root cause
+\ei
+
+\slide{Tools}
+
+\bi
+\item Have tools
+\item Know how things work so you can use the tools
+\item Know how to build tools (anecdote)
+\item Vendor-supplied tools and feedback (anecdote)
+\ei
+
+\slide{Conclusion}
+
+End-to-end understanding: gurus and architects
+
+\end{document}

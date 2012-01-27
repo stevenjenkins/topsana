@@ -1,0 +1,195 @@
+\documentclass{slides}
+\usepackage{url}
+\title{Advanced Topics in Systems Administration -- Lecture 2}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+
+\begin{document}
+
+\maketitle
+
+\slide{Agenda}
+
+\bi
+\item Discuss papers assigned
+\item PSNA Chapter 2
+\item PSNA Chapter 3
+\item PSNA Chapter 4
+\item Assign more readings
+\ei
+
+\slide{Evard}
+
+This article was written in 1997.  Let's explore how (if) the 
+world has changed.
+
+\bi
+\item He asserts systems administration is growing more 
+	complex.  Agree or disagree?  Why?
+
+\item What are the Windows equivalents of {\tt /etc/passwd},
+	{\tt crontab}, and {\tt /etc/inetd.conf}?
+
+\item Assignment: What are the Windows equivalents of Figure 2?  
+
+\item \emph{The real killer for systems administrators is change.}
+
+\item Theory question: is there some way to make this social
+	science survey into hard science?  
+\ei
+
+\slide{Fulmer and Levine}
+
+\bi
+\item What is your cost estimate of this solution?
+\item How well will this solution scale to newer releases of Windows?
+\item How well will this solution scale to a more diverse hardware
+	environment?
+\ei
+
+
+\slide{Gomberg, Evard, Stacey}
+
+\bi
+\item To read: Depot (Colyer \& Wong, 1992)
+\item Software continuum
+\item Classes of machines, not a single build
+\item Reliance on Microsoft-sanctioned methods
+\ei
+
+\slide{Gomberg, Evard, Stacey (2)}
+
+\bi
+\item Packaging costs
+	\bi
+		\item unattended install option
+		\item additional tools (e.g., IE and Office resource kits)
+		\item VB app that clicks the right place at right time
+	\ei
+\item They don't have many complaints about SMS
+\ei
+
+Sidebar: Files, hard links and symbolic links
+
+\slide{Heiss}
+
+\bi
+\item {\tt rpc.bootparamd} versus DHCP
+\item 600 machines upgraded in 6 months -- too slow
+\item Failure rate of 30\%
+\ei
+
+\slide{Heiss (2)}
+
+\bi
+\item More error checking
+\item Note choice of tool (Perl, not {\tt /bin/sh})
+\item Infrastructure cleanup (e.g., \emph{rogue} {\tt rarpd} servers)
+\item tell 600 machines do reboot (scale)
+\item real-time status page
+\item Note: author has a TODO list on his website
+\ei
+
+\slide{Martin and Brooks}
+
+\bi
+\item \emph{DLL Hell}
+\item {\tt sysdiff} (not in XP, but see \\
+	\url{http://www.microsoft.com/oem})
+\item shared file conflict resolution
+\item {\tt jacal} project (on Sourceforge) (dead?)
+\ei
+
+\slide{Market Economics}
+
+\bi
+\item Exercise: estimate the market value of Jacal
+\item \url{http://www.altiris.com}
+\item \url{http://www.powerquest.com}
+\item How much would it cost to enhance to marketable
+	quality?
+\item How many copies at what price would need to
+	be sold to cover that cost?
+\item Should Brooks and Martin quit their day jobs and
+	create a start-up?
+\ei
+
+\slide{Kickstart}
+
+\slide{Ressman and Valdess[2000]}
+
+\bi
+\item The year is now 2000
+\item Unix-only solution
+\item smart clients \& dumb server solution
+\item No centralized file systems
+\item Three parts: 
+	\bi
+	\item software distribution
+	\item patch distribution
+	\item configuration management
+	\ei
+\ei
+
+\slide{Ressman and Valdes[2000] (2)}
+
+\bi
+\item software distribution: use existing, multi-platform package format 
+	(RPM) on top of FTP
+\item patch distribution: leverage FTP (Are there better solutions today?)
+\item configuration management: cfengine
+\item storage: 100 programs $\times$ 100 machines $=$ 10,000 entries, which
+	implies a relational database (MySQL)
+\item programming language: Perl
+\ei
+
+\slide{Ressman and Valdes[2000] (3)}
+
+Does RedHat network serve the same function as the system they built?
+
+\slide{Beck[1999]}
+
+\bi
+\item Is this system necessary?
+\item How much did this cost?
+\item How much would this cost at ETSU?
+\item How much is it worth?
+\ei
+
+\slide{Valian[1999]}
+
+\bi
+\item Is this system necessary?
+\item How much did this cost?
+\item How much would this cost at ETSU?
+\item How much is it worth?
+\ei
+
+\slide{Random project ideas}
+
+\bi
+\item
+Survey the LISA papers, build a classification system, and see how the
+topics over the years have changed, if at all.  For example, is there
+any trend in papers on building systems?  Take Burgess' paper on the
+Theory of Systems Administration and see if anything interesting is
+there.
+
+\item
+I have a pet software project (or two) that needs to be put into RPM.
+
+\ei
+
+\slide{Readings for next time}
+
+\bi
+\item Athena (\emph{Network Services in the Athena Environment})
+\item Vincent/Acropolis (\url{http://linux.ait.iastate.edu/pub/doc/development/ISU_Big_Picture.txt})
+\item Aurora (\url{http://www.usenix.org/publications/library/proceedings/lisa95/gittler.html})
+\item PSNA Chapters 5-9
+\ei
+
+\end{document}

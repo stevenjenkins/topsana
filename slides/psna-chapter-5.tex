@@ -1,0 +1,62 @@
+\documentclass{slides}
+\usepackage{url}
+\title{The Practice of System and Network Administration: Chapter 5}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\assignment}[1]{{\bf Idea: } #1 }
+
+\begin{document}
+
+%\maketitle
+
+\slide{PSNA Chapter 5: Fixing Things Once}
+\bi
+\item Fixing something once rather than over and over again
+\item Corollary A: Fix the problem permanantly
+\item Corollary B: Don't reinvent the wheel
+\item Corollary C: Fix the problem for all hosts at the same time
+\item Avoid the temporary fix trap
+\item Measure twice, cut once
+\ei
+
+\slide{How sweet it is}
+
+\emph{Getting the basics right makes things so good that you forget how 
+bad things were when you didn't have the basics done right.}
+
+\slide{Command-line editing}
+
+(example)
+
+\slide{The Icing}
+\bi
+\item Automation can catch (or fix) the symptoms
+\item Automation should fix the underlying problem
+\ei
+
+\slide{The Dark Side of Automation}
+
+\bi
+\item Programs generate more alerts than humans can  handle
+\item Programs have to be fed
+\item Programs can break
+\ei
+
+\slide{My Preferences}
+
+\bi
+\item command-line editing
+\item Makefiles
+\item RCS (or CVS)
+\item {\tt tcpdump} or {\tt ethereal}
+\item {\tt sh/awk/sed} if less than 30 lines
+\item Perl for anything over 30 lines (especially if there
+	is a CPAN module to solve the problem)
+\ei
+
+\end{document}

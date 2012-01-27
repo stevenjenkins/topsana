@@ -1,0 +1,99 @@
+\documentclass{slides}
+\usepackage{url}
+\title{The Practice of System and Network Administration: Chapter 8}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\assignment}[1]{{\bf Idea: } #1 }
+
+\begin{document}
+
+%\maketitle
+
+\slide{PSNA Chapter 8: Disaster Recovery and Data Integrity}
+
+
+Examine what may occur, prioritize, and plan.
+
+Part of an overall business plan, not just technology (SG anecdote)
+
+\bd
+\item[BCP] is Business Continuity Planning
+\item[DRIP] is Disaster Recovery Implementation Planning
+\ed
+
+\slide{What is a disaster?}
+
+Anything that disrupts your business.  See \url{http://www.23.com/backhoe}
+for an example.
+
+\slide{Risk Analysis}
+
+Budget is $(cost_{disaster} - cost_{mitigation})\times risk$
+
+\bi
+\item $Cost_{flood} = 10000000$
+\item $Pr(flood) = 10^{-6}$
+\item implies the budget should be \$10, assuming that the cost after
+mitigation would be zero.
+\ei
+
+\slide{Legal Obligations}
+
+\bi
+\item to owners (e.g., stockholders)
+\item to organizations (e.g., SEC, governmental bodies)
+\item to clients (e.g., contractual agreements)
+\ei
+
+\slide{Damage Limitations}
+
+Reduce the impact of a disaster.
+
+Sidebar: fix once vs recurring cost
+
+\slide{Preparation}
+
+The day of the disaster should not find you unprepared.
+
+$C^3$ is key
+
+\slide{Data Integrity}
+
+\bi
+\item Change management and access control
+\item Read-only implies checksums
+\item unexpectedly large changes
+\item unexpected changes (e.g., lockdown windows)
+\item {\tt perl -c}
+\ei
+
+\slide{Redundancy}
+
+\bi
+\item hot-hot vs hot-cold
+\item Security disaster
+\item media relations
+\ei
+
+\slide{One Way To Pay For DR}
+
+Iff
+
+\bi
+\item MAN is cheap (or already paid for)
+\item HA is already paid for
+\item your company has multiple data centers
+\ei
+
+then
+
+\bi
+\item split your HA pairs
+\ei
+
+\end{document}

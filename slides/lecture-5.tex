@@ -1,0 +1,81 @@
+\documentclass{slides}
+\usepackage{url}
+\title{Advanced Topics in Systems Administration -- Lecture 5}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+
+\begin{document}
+
+\maketitle
+
+\slide{Agenda}
+
+\bi
+\item Discuss Traugott/Huddleston 1998
+%\item PSNA Chapter 7 (Security)
+%\item PSNA Chapter 9 (Ethics)
+\item AFS (finish User, begin SA)
+\item For next week
+\ei
+
+\slide{Traugott}
+
+Key contributions are:
+\bi
+\item Infrastructure as unit vs set of individual systems
+\item Bootstrap sequence
+\ei
+
+\slide{Infrastructure as a unit}
+
+\bi
+\item Forces planning (vs {\it ad hoc} growth)
+\item Forces services model (vs machine-centric)
+\ei
+
+\slide{Bootstrap sequence}
+
+\begin{tabular}{|lr|lr|}
+\hline
+1 & version control 	& 9 	& file replication \\
+2 & gold server 	& 10 	& client file access \\
+3 & host install tools	& 11	& client OS update \\
+4 & {\tt ad hoc} change tools & 12 & client config mgmt\\
+5 & directory servers 	& 13 & client app mgmt\\
+6 & auth servers & 14 & mail \\
+7 & time sync & 15 & printing \\
+8 & network file services & 16 & monitoring \\
+\hline
+\end{tabular}
+
+\slide{Client model}
+\bi
+\item Fat client (data-full)
+\item hybrid data-full/data-less model (their model is here)
+\item Thin client (data-less)
+\ei
+
+\slide{Assignment}
+
+Propose and define namespaces for the Traugott/Huddleson model, including
+(at least) the following:
+\bi
+\item users
+\item groups
+\item hostnames
+\item IP addresses
+\item services (web, DNS, DHCP, printing, filesystems, etc)
+\ei
+
+\slide{Next time}
+
+\bi
+\item Discuss Traugott 1998
+\item PSNA Chapter 7 
+\item PSNA Chapter 9
+\ei
+
+\end{document}

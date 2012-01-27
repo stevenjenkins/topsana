@@ -1,0 +1,126 @@
+\documentclass{slides}
+\usepackage{url}
+\title{Advanced Topics in Systems Administration -- Lecture 3}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+
+\begin{document}
+
+\maketitle
+
+\slide{Agenda}
+
+\bi
+\item Discuss papers assigned
+\item PSNA Chapter 5
+\item PSNA Chapter 6
+\item PSNA Chapter 8
+\item Assign more readings
+\ei
+
+\slide{Athena}
+
+\bi
+\item Goals: 
+	\bi
+	\item Software coherence in heterogenous environment
+	\item unlimited upward scalability of service environment
+	\item foster educational innovation
+	\ei
+\item Total hosts: 800
+\item Client/server ratio of 7:1
+\item \emph{Athena is a source code shop}
+\item Introduced concept of public workstation
+\ei
+
+\slide{Athena: New services}
+\bi
+\item Kerberos: authentication
+\item Service Management System (Moira)
+\item Hesiod
+\item Note: Moira $+$ Hesiod versus AD
+\item File service
+\item Zephyr
+\item Time service
+\item Discuss and OLC
+\item Update service
+\ei
+
+\slide{Vincent/Acropolis}
+
+\bi
+\item 30000 users: bigger than Athena
+\item Included Mac's and Windows
+\item Authorization
+\ei
+
+\slide{Aurora}
+\bi
+\item Athena on Wall Street -- not a toy, but Unix-only
+\item Politics was involved
+\item Global: not just a campus (scale down as well as up)
+\item Attempt to use clout to influence vendors
+\ei
+
+\slide{Aurora: Key Components}
+
+\bi
+\item Global look and feel (Global Desk)
+\item Global file system (AFS)
+\item Global configuration database (DSDB)
+\item Global homogeneous OS configuration
+\ei
+
+\slide{Aurora: Global Desk}
+
+The Unix/Linux world is still in this struggle, although 
+now there are only two serious players: Gnome and KDE.  Morgan
+Stanley chose a vendor that later went out of business, which
+resulted in extremely high costs to add additional underlying
+platforms.
+
+Profile system provided classes and groups.  Written in KSH, and,
+the last I heard, still not ported to anything else.
+
+\slide{Aurora: Global file system}
+
+\bi
+\item AFS is still the only serious answer
+\item Slightly different semantics
+\item Good performance over WANs
+\item Morgan Stanley had to build a system (VMS) to manage this
+\item Estimated cost of replacing AFS and VMS with something else is 
+	around 10 man years, assuming a commercial solution is
+	available.
+\ei
+
+\slide{Aurora: DSDB}
+
+\bi
+\item Equivalent to Moira
+\item Used NIS (or native name-service system) rather than Hesiod
+\ei
+
+\slide{Aurora: OS Configuration}
+
+\bi
+\item Rebuild all machines according to standards
+\item Basically RCS $+$ {\tt rdist} (or {\tt rsync})
+\item Linux added in 6 months of work
+\item Very expensive, though, for certain systems (e.g., AIX)
+\ei
+
+\slide{Next time}
+
+\bi
+\item PSNA Chapter 7
+\item PSNA Chapter 9
+\item Traugott 1998
+\item Burgess 1995
+\item AFS: \url{http://www.openafs.org/pages/doc/UserGuide/auusg002.htm}
+\ei
+
+\end{document}

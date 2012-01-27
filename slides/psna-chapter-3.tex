@@ -1,0 +1,103 @@
+\documentclass{slides}
+\usepackage{url}
+\title{The Practice of System and Network Administration: Chapter 3}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\assignment}[1]{{\bf Idea: } #1 }
+
+\begin{document}
+
+\maketitle
+
+\slide{Services}
+
+\begin{quotation}
+Services are what distinguish a structured computing environment that is 
+managed by SAs from an environment where there are one or more stand-alone
+computers
+\end{quotation}
+
+\slide{What services does ETSU offer?}
+
+\bi
+\item network connectivity
+\item DNS
+\item NT user account management
+\item mail
+\item printing
+\item others?
+\ei
+
+\slide{What services would you like to be offered?}
+
+\bi
+\item ubiquitous file services
+\item Web publishing
+\item mailing lists
+\item calendaring
+\item other?
+\ei
+
+\slide{Service goals}
+
+\bi
+\item make the service reliable
+\item scale the service
+\item monitor the service
+\item maintain the service
+\item support the service
+\ei
+
+\slide{The Basics: what does the customer want?}
+
+\bi
+\item Who is the customer at ETSU?
+\item What does the customer want?
+\item What SLA does the customer expect?
+\item What SLA is the customer paying for?
+\ei
+
+\slide{Discussion}
+
+\begin{quotation}
+A server should be as simple as possible.
+\end{quotation}
+
+versus
+
+\begin{quotation}
+All systems should be built the same.
+\end{quotation}
+
+\slide{Design Tips}
+
+\bi
+\item Simple, single-purpose systems
+\item Fewer, larger systems 
+\item Service names in configurations versus hostnames
+\item Consider carefully the upgrade path (in versions, scale, and products)
+\item Bad capacity planning makes a bad first impression
+\item Don't forget the network:
+	$T = (S_1 + C_1 + R_1) + \ldots + (S_n + C_n + R_n)$
+\ei
+
+\slide{Discussion 2}
+
+\begin{quotation}
+We have found great success through the use of open protocols 
+and open architectures.
+\end{quotation}
+
+versus
+
+\begin{quotation}
+No one ever got fired for buying 
+(\emph{IBM} in the 70's, \emph{Microsoft} in the 90's)
+\end{quotation}
+
+\end{document}
