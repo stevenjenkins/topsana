@@ -1,0 +1,92 @@
+\documentclass{slides}
+\usepackage{url}
+\title{PSNA Chapter 12: Maintenance Windows}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+
+\begin{document}
+
+\slide{Maintenance Windows}
+
+This chapter is about planning for large events: major upgrades,
+major outages, large-scale events.
+
+The basic strategy is to emulate NASA with a 
+\emph{flight-director} approach.
+
+\slide{The Basics}
+
+\bi
+\item Scheduling
+\item Planning
+\item Flight Director
+\item Change Proposals
+\item The Master Plan
+\item Disabling Access
+\item Mechanics and Coordination (next slide)
+\ei
+
+\slide{Mechanics and Coordination}
+
+\bi
+\item Sequence (shutdown/boot)
+\item Console service
+\item Radios
+\ei
+
+\slide{The Basics (cont.)}
+
+\bi
+\item Deadlines for Change Completion
+\item Comprehensive System Testing
+\item Postmaintenance Communication
+\item Re-enable Remote Access
+\item Visible Presence the Next Morning (\emph{key})
+\item Postmortem (\emph{key})
+\ei
+ 
+\slide{The Icing}
+
+\bi
+\item Mentoring a New Flight Director
+\item Trending of Historical Data
+\item Providing Limited Availability (\emph{hard})
+\item High-Availability Sites
+\ei
+
+\slide{The Nines}
+
+\bi
+\item 99.9\% (9 hours down per year)
+\item 99.99\% (1 hour per year)
+\item 99.999\% (aka \emph{5 nines}) (5 minutes per year)
+\item 99.9999\% (aka \emph{6 nines}) (1 minute per year)
+\ei
+
+\slide{High Availability Sites}
+
+\bi
+\item The basics are the same as usual
+\item Redundancy is a prerequisite
+\item No need to disable access
+\item No need for a full shutdown/boot list, although one
+  interesting exercise is to reboot the entire plant
+\ei
+
+\slide{Conclusion}
+
+\bi
+\item Preparation
+\item Execution
+\item Postmaintenance customer care
+\ei
+
+The military says: "Proper planning prevents poor performance."  That
+saying holds true in the SAs world, too.
+
+\end{document}

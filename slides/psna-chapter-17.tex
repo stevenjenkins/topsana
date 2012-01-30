@@ -1,0 +1,147 @@
+\documentclass{slides}
+\usepackage{url}
+\title{PSNA Chapter 17: Data Centers}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+
+\begin{document}
+
+\slide{Data Centers}
+
+\emph{A data center is anywhere that you keep machines that are
+shared resources and where your customers do not need physical access.}
+
+\emph{The theory is that you put all your most important eggs in one basket
+and then make sure it is a really good basket.}
+
+Who is responsible for power and cooling?
+
+\slide{Considerations}
+
+\bi
+\item location
+\item flooring
+\item racks
+\item wiring
+\item power
+\item cooling
+\ei
+
+\slide{Considerations (cont.)}
+
+\bi
+\item fire supression
+\item natural disasters
+\item man-made disasters
+\item duration (8-10 years)
+\ei
+
+\slide{Picking a Location}
+
+\bi
+\item lightning
+\item earthquakes
+\item floods
+\item What does East Tennessee have?
+\ei
+
+\slide{Access}
+
+\bi
+\item To get to the building (legal issues and infrastructure)
+\item To get in the building (delivery dock? wheelchair ramps?)
+\item To get in the data center
+\ei
+
+\slide{Security}
+
+\bi
+\item Need-to-access basis only
+\item Fewer hands implies fewer accidents
+\item Don't use simple keys (ATT paper on mastering)
+\item Proximity badges are nice
+\item Biometrics if necessary (ethics?)
+\ei
+
+\slide{Power and Air}
+
+\bi
+\item Power and cooling max out at the same time
+\item One ton cooling for every 5K sq feet
+\item Humidity control can be important
+\item Power regulator (smoothing spikes, brownouts)
+\item Battery
+\item Generator
+\item ATS (Automatic Transfer Switch)
+\item Monitor temperatures (note the plural!)
+\ei
+
+\slide{Power Distribution}
+
+\bi
+\item Over  vs. under
+\item Overhead power less likely to get flooded
+\item Raised floors require water sensors in floors
+\item Real PDUs (Power Distribution Units) not cheap power strips
+\item Dual-system reduces risks
+\ei
+
+\slide{Fire Supression}
+
+\bi
+\item Some systems can kill
+\item Water?
+\item $CO_2$
+\item Other gases
+\ei
+
+\slide{Racks}
+
+\bi
+\item basic issues: selection and layout
+\item number of posts, height, width, depth
+\item airflow, strength, mounting options, wiretrays
+\item dual, vertical PDUs
+\item cable management is critical
+\item consider freestanding equipment
+\ei
+
+\slide{Wiring}
+
+\emph{The cost of prewiring is more than compensated for by the productivity
+it affords.}
+
+\bi
+\item Neatness counts
+\item Raised floors are risky
+\item Prewire as much as possible
+\item Color coding
+\item Leave slack for working on systems
+\item Separate data and power
+\item Labeling
+\ei
+
+\slide{Miscellaneous}
+
+\bi
+\item Radios or wall phones
+\item Console servers (KVM switches or serial)
+\item Carts and/or workbenches
+\item Tools and supplies -- parking spaces
+\item Carts and trucks
+\ei
+
+\slide{Icing}
+
+\bi
+\item Greater redundancy
+\item More space
+\item Ideal datacenters
+\ei
+
+\end{document}

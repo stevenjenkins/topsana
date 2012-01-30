@@ -1,0 +1,127 @@
+\documentclass{exam}
+\usepackage[dvips]{graphicx}
+\usepackage{comment}
+%\linespread{1.3} % for one and a half
+%\linespread{1.6} % for double-spacing
+\newcommand{\myq}{\question[1]}
+\addpoints
+\begin{document}
+%\maketitle
+{\large CS 5360 Mid-term 2003}\\
+%\vspace{0.2in}
+\hbox to \textwidth{\large Name:\enspace\hrulefill}
+\vspace{0.1in}
+
+This exam has \numquestions{} questions for a total of \numpoints{} points.
+
+\begin{questions}
+
+\question[100]
+
+\section*{Introduction}
+
+Congratulations!  You have just been hired by ABC Company, which is looking
+to expand.  You have been asked to provide Systems Administration
+consulting directly to the CEO, who wants you to look over the company's
+business plan and make suggestions about the company's IT infrastructure
+needs.  Your presentation should both educate the CEO about the basic
+options, as well as make recommendations.  In addition, you are asked 
+to prepare training materials
+suitable for the setup of the new IT staff.
+
+Note that the company has contracted for multiple presentations -- sharing
+of presentation materials across the consultants is forbidden by contract.
+\emph{Translation: all work should be done by individuals with no discussion
+of the exam, per the Code of Conduct.}
+
+For your reference, I have included the chapter titles of the first
+14 chapters of PSNA:
+
+\begin{enumerate}
+\item Desktops
+\item Servers
+\item Services
+\item Debugging
+\item Fixing Things Once
+\item Namespaces
+\item Security Policy
+\item Disaster Recover and Data Integrity
+\item Ethics
+\item Change Management and Revision Control
+\item Server upgrades
+\item Maintenance Windows
+\item Service Conversions
+\item Centralization and Decentralization
+\end{enumerate}
+
+\section*{Business Models}
+
+\begin{enumerate}
+\item Large company with 5000 employees on a 3-building campus handling 
+  the back-end of an
+  e-commerce site.  There is an in-house development team of 10 developers,
+  and the full-time, permanant IT staff for internal needs should have no 
+  more than an additional 20 people.  You do not need to consider
+  the Help Desk for external users.  Note that each person in the
+  company has a desktop PC.  There are 4 servers for development, and
+  4 servers for production use by the e-commerce site.  
+  Other servers (and services) need to  be specified by you.
+\item Small engineering company with 200 employees, 150 of which are
+  developers (on both Windows and Unix platforms), 30 of which are 
+  sales \& marketing, with the final
+  20 being management.  The company is heavily influenced by Extreme
+  Programming and has broken up the developers into 20 small 
+  departments with very differing needs.  You will need to make a 
+  recommendation for the
+  size of the IT team in addition to the other requirements.  Each
+  engineer has 2 machines on her desk: one running Windows and one
+  running either Solaris, FreeBSD, or Linux (you can assume roughly
+  $1/3$ are running each platform).  
+\item Small university of 1000 students, 50 faculty, and 
+  20 administrative staff (including 5 IT).  Each faculty and staff
+  member has a desktop PC, but no students have individual machines: they
+  share the use of 4 labs with 50 machines each that are open 24 hours.
+  
+\end{enumerate}
+
+\section*{Deliverables}
+
+All materials should be suitable for presentation to an appropriate audience.
+
+\begin{itemize}
+\item An introduction to the material, describing which  of the first
+  14 chapters in
+  \emph{The Practice of System and Network Administration} are important
+  for the CEO and which are important for the IT staff.
+\item A slide presentation for the CEO, covering the appropriate items, 
+  with appendices if necessary.
+\item Materials for the IT staff in whatever form you think most 
+  appropriate for training and reference.
+\end{itemize}
+
+\section*{Hints}
+
+You will need to answer at the appropriate level.  For example, on the
+chapter on desktops, you do not need to go to a vendor's website and get
+prices of hardware (you aren't being asked for cost information on this
+assignment).  Instead, you need to consider the company, it's needs, and
+the size of the IT staff to determine what the right model for computing
+would be for the company.  In your presentation, you will need to educate
+your audience about the basic choices that need to be made, and show them
+your recommendations (clearly explaining why you have made that choice).
+
+While you are not allowed to discuss this with any other student, you are
+free to ask me questions.  I would prefer for you to email me questions
+directly, and I will post questions and answers to the discussion board
+on Blackboard.
+
+Also, you are free to use materials from elsewhere on this exam, in 
+particular, use this exam as an opportunity to examine others' policy
+documents and put together a portfolio of IT policies.  You should also
+use this opportunity to put together a sample runbook (or 
+\emph{Flight Director's Handbook} of large changes).
+
+\end{questions}
+
+\end{document}
+

@@ -1,0 +1,73 @@
+\documentclass{slides}
+\usepackage{url}
+\title{PSNA Chapter 11: Server Upgrades}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\assignment}[1]{{\bf Idea: } #1 }
+
+\begin{document}
+
+\slide{Server Upgrades}
+How do you upgrade the OS of a single host?
+
+List three ways not to upgrade the OS of a single host.
+
+\slide{Upgrade Process}
+\bi
+\item Checklist
+\item Verification and/or upgrade plan 
+\item Develop test plan for each service
+\item Back-out plan
+\item Select maintenance window
+\item Announce the upgrade
+\item Execute the tests (dry run)
+\ei
+
+\slide{Upgrade Process (cont.)}
+\bi
+\item Implement the changes, with someone watching
+\item Repeat tests
+\item If all else fails, back-out
+\item Communicate completion/back-out
+\ei
+
+\slide{How long, O SA, How Long?}
+
+Your window needs to be:
+\bi
+\item time upgrade should require
+\item plus time testing should take
+\item plus time to fix problems
+\item plus time to back out
+\item plus time to verify back-out
+\ei
+
+\emph{Initially, it is best to double or triple your estimates to adjust \
+for hubris.}
+
+\slide{Communication}
+
+\bi
+\item Use a template that is filled out instead of editing previous 
+  announcements.
+\item Communication either completion or back-out (silence is \emph{not}
+  golden!)
+\ei
+
+\slide{Icing}
+
+\bi
+\item multiple services (risk/time trade-off)
+\item fresh installs
+\item reusing tests in monitoring
+\item system changelog
+\item dress rehearsal
+\item old and new versions (default symlinks)
+\ei
+
+\end{document}

@@ -1,0 +1,115 @@
+\documentclass{slides}
+\usepackage{url}
+\title{Advanced Topics in Systems Administration -- Lecture 9}
+\author{Steven L. Jenkins}
+\date{March 11, 2003}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+
+\begin{document}
+
+\maketitle
+
+\slide{Agenda}
+
+\bi
+\item Distribute exam
+\item Chapter 19: Email
+\item Mail group work teams
+\item Chapter 20: Printing
+\item Chapter 21: Backup and Restore
+\item Chapter 22: Remote Access
+\ei
+
+\slide{Exam}
+
+\bi
+\item Due April 2, start of class (7pm)
+\item Hardcopies only
+\item My estimate is 10 hours of time, assuming you do all your
+  work in a word processor.
+\item I'll use Blackboard's discussion board (I've removed anonymous posting,
+but enabled editing or removing your own posts)
+\ei
+
+\slide{Mail Group Teams}
+
+\bi
+\item Microsoft: Robert*, Sai, Adam, Kao-Yee, Judith
+\item Open Source 1: Rick, Lingling, Trey, David, Vamshi*
+\item Open Source 2: Steve, Todd, Amanda, Narsimha, Mario, Gunter
+\ei
+
+Note that Robert and Vamshi may opt out of the project.  If Robert opts
+out, then Gunter will move to the first group.
+
+\slide{Mail Assignment: Overview}
+
+Set up the following:
+
+\bi
+\item At least one MUA
+\item Mail store
+\item MTA from MUA to store
+\item MTA from MTA to other groups 
+\ei
+
+An implicit part of the assignment is to work out a good naming scheme
+for email addressing (as well as enough DNS configuration to talk
+between the clients and servers -- hardcoding DNS is fine).  Each person 
+in your group must have an email 
+account.  You may find it convenient to leverage SAI's LDAP project 
+so that you can more easily handle mail routing. 
+
+\slide{Mail Assignment: Microsoft}
+
+\bi
+\item Name: ms.example.org
+\item MUA: Outlook (with POP, IMAP, and MAPI; must use SSL)
+\item MUA: OWA (Outlook Web Access)
+\item MTA and Mail store: Exchange (any version -- the beta of Exchange
+  2003 is available from Microsoft for free; Robert also has a copy of
+  Exchange 2000 under the MSDNAA).  
+\item MTA to other groups: Exchange
+\ei
+
+\slide{Mail Assignment: OS 1}
+
+\bi
+\item Name: os1.example.org
+\item MUA: Ximian Evolution (must configure POP and IMAP)
+\item MUA: Web client of your choice
+\item MTA: sendmail
+\item Mail store: Cyrus IMAP
+\item MTA to other groups: sendmail
+\ei
+
+Note: if Gunter moves to group one, then the requirement for the second
+MUA is dropped.
+
+\slide{Mail Assignment: OS 2}
+
+\bi
+\item Name: os2.example.org
+\item MUA: PINE
+\item MTA: qmail (or PostFix)
+\item Mail store: UW IMAP
+\item MTA to other groups: qmail (or PostFix)
+\ei
+
+\slide{March 25 Agenda}
+
+\bi
+\item Exam due April 2; mail work due April 9
+\item \emph{The Depot: A Framework for Sharing Software Installation
+  Across Organizational and UNIX Platform Boundaries}, by
+  Manheimer, et al, in LISA IV (1990).  Try Google or Citeseer.
+\item PSNA Chapter 23: Software Depot Service
+\item PSNA Chapter 24: Monitoring
+\item PSNA Chapter 25: Organizational Structures
+\item PSNA Chapter 26: Perception and Visibility
+\ei
+
+\end{document}

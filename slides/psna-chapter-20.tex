@@ -1,0 +1,93 @@
+\documentclass{slides}
+\usepackage{url}
+\title{PSNA Chapter 20: Print Service}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+
+\begin{document}
+
+\slide{Print Service}
+
+Printing is a critical business function  --- in the authors' experience,
+customers tend to rank it second to email in terms of critical services.
+
+SAs who do not appreciate the importance their customers attach to
+printing will not provide good printing support.  
+
+\slide{Amount of Centralization}
+
+\bi
+\item A printer on every desktop
+\item All printers centralized
+\item Somewhere in between
+\ei
+
+\slide{Print Architecture Policy}
+
+\bi
+\item Sharing printers
+\item Personal printers
+\item Maintenance
+\item Accounting
+\ei
+
+\emph{The objective on an accounting policy is to create the least 
+objectionable solution.}
+
+\slide{Policies (cont.)}
+
+\bi
+\item Printer equipment standard
+  \bi
+    \item Protocols
+    \item Printers
+  \ei
+\item Printer access
+\item Print job cancellation
+\item Printer naming
+\ei
+
+\slide{System Architecture}
+
+\bi
+\item \emph{peer-to-peer}: easy to set up but difficult to manage
+\item \emph{central funnel}: harder to set up but simpler to manage
+\ei
+
+\slide{Documentation}
+
+\bi
+\item How to print
+\item List of printers
+\item Printer labels
+\ei
+
+\slide{Monitoring}
+
+\bi
+\item spooling and printing service
+\item status of each printer
+\ei
+
+\slide{Environmental}
+
+\bi
+\item Facilitate a paper recycling policy
+\item Facilitate a toner recycling policy
+\ei
+
+\slide{The Icing}
+
+\bi
+\item Automatic fail-over and load balancing
+\item Dedicated clerical support
+\item Shredding
+\item Dealing with printer abuse
+\ei
+
+\end{document}

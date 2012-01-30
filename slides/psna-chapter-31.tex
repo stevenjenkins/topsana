@@ -1,0 +1,40 @@
+\documentclass{slides}
+\usepackage{url}
+\title{PSNA Chapter 31: Firing System Administrators}
+\author{Steven L. Jenkins}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+
+\begin{document}
+
+\slide{Firing System Administrators}
+
+Question: How is firing System Administrators different from hiring 
+other staff?
+
+Answer: How many other employees do you have that can send email as
+the CEO, destroy all your backups, erase all your systems, all the time
+sending a video stream of your Help Desk's confusion to the Internet?
+
+\slide{The Basics}
+
+\bi
+\item Follow HR policy
+\item Remove physical access
+\item Remove remote access
+\item Remove service access
+\item Reduce the number of access databases
+\ei
+
+\slide{Icing}
+
+\bi
+\item Single authentication database (SSO)
+\item Monitoring system file changes ({\tt tripwire})
+\ei
+
+\end{document}

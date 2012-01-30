@@ -1,0 +1,88 @@
+\documentclass{slides}
+\title{System Performance Tuning: Chapters 1 and 2}
+\author{Steven L. Jenkins}
+\include{slide-include}
+
+\begin{document}
+
+\maketitle
+
+\slide{Introduction}
+
+There are two general areas we'll discuss: performance tuning and
+capacity planning.  Both of these depend on computer architecture and
+application architecture.
+
+\bi
+\item CPU speed
+\item Memory capacity
+\item Disk speeds
+\item Network speeds
+\ei
+
+
+\slide{Principles}
+
+\be
+\item Understand your environment
+\item TANSTAAFL (\emph{cheap, fast, reliable: pick two})
+\item Throughput vs latency
+\item Overutilization of a resource: \emph{The Wall}
+\item Design tests carefully
+\ee
+
+
+\slide{Workflow Management}
+
+\bi
+\item Dynamic systems, not static
+\item Heisenberg's Principle of Uncertainty
+\ei
+
+Solution: careful, methodical measurement.
+
+\slide{Three Scenarios}
+
+\bi
+\item Startups
+\item Governments
+\item Utopia
+\ei
+
+\slide{Tools}
+
+\bi
+\item {\tt vmstat}
+\item Process accounting ({\tt \verb+\etcinit.d\acct+} -- not on Linux)
+\item {\tt sar} (not in default RedHat: look for sysstat package)
+\ei
+
+Note: the text uses Solaris and Linux, but Linux does not have nearly
+as rich as a toolset.  Building performance tools on Linux is a very
+good way to increase your understanding of systems.
+
+\slide{Patterns}
+
+\bi
+\item Request-response
+\item Inverse request-response
+\item Data transfer
+\item Message passing
+\ei
+
+Another interesting exercise is looking at packet size distributions.
+
+\slide{Email}
+
+Discuss:
+
+\bi
+\item What are the metrics interesting in email systems?
+\item What are the expected patterns in email systems?
+\item What is the expected packet size distribution?
+\item What are the possible bottlenecks in the mail systems that 
+  you have assembled?
+\item How would you create tests to determine these?
+\ei
+
+\end{document}
